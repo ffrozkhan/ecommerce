@@ -19,7 +19,7 @@ const ProductCard = ({ item, beingUsed }) => {
         <img src={item.image} alt="" />
       </div>
       <div className="description">
-        <h2>{item.title.slice(0, 15) + ".."}</h2>
+        <h2>{item.title.slice(0, 15) + "..."}</h2>
         <Rating
           name="read-only"
           value={item.rating.rate}
