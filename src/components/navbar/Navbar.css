@@ -1,0 +1,23 @@
+.navHead {
+  height: 80px;
+  background-color: black;
+  color: white;
+  line-height: 80px;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navHead a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  padding: 10px 25px;
+}
+.navHead input {
+  width: 250px;
+  outline: none;
+  height: 40px;
+}
