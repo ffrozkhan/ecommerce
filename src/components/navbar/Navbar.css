@@ -10,15 +10,25 @@
   width: 100%;
   z-index: 1000;
 }
+
 .navHead a {
   text-decoration: none;
   color: #fff;
   font-size: 25px;
   padding: 10px 25px;
 }
+
 .navHead input {
   width: 250px;
   outline: none;
   height: 40px;
   border-radius: 10px;
+}
+
+.left a:hover {
+  color: #1677ff;
+}
+
+.left a {
+  transition: 0.3s;
 }
