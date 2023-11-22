@@ -43,7 +43,7 @@ const ProductsHome = () => {
     <div style={{ display: "flex" }}>
       <div
         style={{
-          width: "15%",
+          width: "17%",
           height: "calc(100vh - 80px)",
           backgroundColor: "#001529",
           position: "fixed",
@@ -77,7 +77,7 @@ const ProductsHome = () => {
           flexWrap: "wrap",
           justifyContent: "space-around",
           // overflow: "auto",
-          marginLeft: "15%",
+          marginLeft: "17%",
           width: "100%",
         }}
       >

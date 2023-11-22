@@ -1,11 +1,12 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector  , useDispatch} from "react-redux";
 import Rating from "@mui/material/Rating";
 
 import "./Details.css";
 
 const ProductDetails = () => {
   const item = useSelector((state) => state.selectedItem);
+  const dispatch = useDispatch()
   return (
     <div className="parent">
       <div className="item-image">
@@ -22,6 +23,12 @@ const ProductDetails = () => {
             readOnly
             precision={0.1}
           />
+        </div>
+        <div className="Cart_button">
+          <button onClick={(e) => {
+              e.stopPropagation();
+              dispatch({type: "ADD_TO_CART" , data: item});
+            }}>Add to Cart</button>
         </div>
       </div>
     </div>
